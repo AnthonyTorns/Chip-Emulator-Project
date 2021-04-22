@@ -1,7 +1,13 @@
 #include <cstdint>
-
-class 
+#include <iostream>
+#ifndef CHIP8_H
+#define CHIP8_H
+using namespace std;
+class Chip8
 {
+
+private:
+//
 public:
   uint8_t cpuRegs[16]{}; // 8 bit registers
   uint8_t mem[4096]; // chip-8 system has 4KB of memory
@@ -14,5 +20,8 @@ public:
 	uint8_t keyboard[16]{};
 	uint32_t screen[64 * 32]{};
 	uint16_t opCode;
-  }
 
+  void loadRom(const char*);
+};
+
+#endif 
