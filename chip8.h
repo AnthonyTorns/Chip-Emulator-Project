@@ -22,6 +22,9 @@ public:
 	uint16_t opCode;
 
   void loadRom(const char*);
+
+  Chip8();
+
 };
 
 #endif 

@@ -26,3 +26,10 @@ void Chip8::loadRom(const char* file) {
 
   input.close();
 }
+
+Chip8::Chip8()
+{
+
+  pc = START;
+
+}
